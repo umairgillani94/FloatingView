@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     lazy var floatingButton : FloatingView = {
-        let normalButton:UIButton = UIButton(type: UIButtonType.system)
+        let normalButton:UIButton = UIButton(type: UIButton.ButtonType.system)
         normalButton.backgroundColor = .red
         normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         normalButton.layer.cornerRadius = 50
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-    func printer() {
+    @objc func printer() {
         print("Button Called")
     }
     
